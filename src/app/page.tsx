@@ -67,7 +67,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <Link
-                  href="https://lorprod.workzonehr.cfapps.eu10.hana.ondemand.com/site#workzone-admin?sap-app-origin-hint=&/groups/fPQkxGea8XlNv7aSFinMfZ/documents/IcwQOtzUWX4sGreao5PNPI/slide_viewer"
+                  href="https://laingorourke-my.sharepoint.com/:b:/p/pmeiring/ERjAmtXsZXVGlD0-98YDvmoBFWbC4_bwyBf3nmgHaBXWMg?e=oJba1V"
                   target="_blank"
                   className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm mt-2"
                 >
