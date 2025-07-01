@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="min-h-screen  relative overflow-hidden">
+    <main className="min-h-screen  relative overflow-hidden bg-black">
       {/* Centered content container */}
       <div className="container mx-auto px-4 py-0 flex justify-center">
         <div className="flex max-w-[1024px] relative">
@@ -25,17 +25,17 @@ export default function Home() {
             <Image
               src="/pic1.png"
               alt="Colleague Guide"
-              width={405}
+              width={425}
               height={270}
               className="transform rotate-6"
             />
           </div>
 
-          <div className="absolute z-10 bottom-[140px] left-[-80px]">
+          <div className="absolute z-10 bottom-[-190px] left-[-130px]">
             <Image
               src="/pic2.png"
               alt="Manager Guide"
-              width={405}
+              width={500}
               height={270}
               className="transform -rotate-12"
             />
