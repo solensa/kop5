@@ -134,8 +134,8 @@ export default function Home() {
                 </h2>
                 <ul className="text-sm my-2 text-black list-disc pl-5">
                   <li>
-                    Work through the agenda bringing a view of your team, and what you'd like the
-                    group to know, provide input, or help shape.
+                    Work through the agenda bringing a view of your team, and what you&apos;d like
+                    the group to know, provide input, or help shape.
                   </li>
                   <li>Discuss collective items if you notice any</li>
                   <li>Agree on actions and deadline</li>
