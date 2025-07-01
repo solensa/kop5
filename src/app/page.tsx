@@ -67,7 +67,7 @@ export default function Home() {
                   </li>
                 </ul>
                 <Link
-                  href="https://lorprod.workzonehr.cfapps.eu10.hana.ondemand.com/site#workzone-admin?sap-app-origin-hint=&/groups/fPQkxGea8XlNv7aSFinMfZ/documents/IcwQOtzUWX4sGreao5PNPI/slide_viewer"
+                  href="https://laingorourke-my.sharepoint.com/:b:/p/pmeiring/EedhYyGUei1GnoK6ulgxf_oBFnOW3jVZN4L0UBI9f7EW1w?e=lodHW3"
                   target="_blank"
                   className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm mt-2"
                 >
@@ -100,7 +100,7 @@ export default function Home() {
                     target="_blank"
                     className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm"
                   >
-                    Manage Agenda Template
+                    Meeting Agenda Template
                   </Link>
                 </div>
               </div>
@@ -122,7 +122,7 @@ export default function Home() {
                     target="_blank"
                     className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm"
                   >
-                    Manage Agenda Template
+                    Meeting Agenda Template
                   </Link>
                 </div>
               </div>
