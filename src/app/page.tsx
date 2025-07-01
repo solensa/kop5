@@ -10,7 +10,7 @@ export default function Home() {
           {/* Flow line - bottom layer */}
           <div className="relative w-[150px] h-[1214px] flex-shrink-0 z-0">
             <Image
-              src="/flow-line2.svg"
+              src="/flow-line3.svg"
               alt="Flow line"
               width={150}
               height={1200}
@@ -23,7 +23,7 @@ export default function Home() {
           {/* Guide images - middle layer */}
           <div className="absolute z-10 -top-5 right-[-200px]">
             <Image
-              src="/colleague.png"
+              src="/pic1.png"
               alt="Colleague Guide"
               width={405}
               height={270}
@@ -33,7 +33,7 @@ export default function Home() {
 
           <div className="absolute z-10 bottom-[140px] left-[-80px]">
             <Image
-              src="/manager.png"
+              src="/pic2.png"
               alt="Manager Guide"
               width={405}
               height={270}
@@ -42,85 +42,158 @@ export default function Home() {
           </div>
 
           {/* Next Steps content - top layer */}
-          <div className="max-w-2xl z-20 relative pt-[90px] pl-2">
+          <div className="max-w-6xl z-20 relative pt-[90px] pl-2">
             <h1 className="text-white text-3xl font-bold mb-8">Next Steps</h1>
 
-            {/* Cards */}
-            <div className="space-y-6">
-              {/* Card 1 */}
+            {/* Column Headers */}
+            <div className="grid grid-cols-2 gap-6 mb-6">
+              <h2 className="text-white text-2xl font-semibold">Participants</h2>
+              <h2 className="text-white text-2xl font-semibold">People Ops</h2>
+            </div>
+
+            {/* 2x4 Grid */}
+            <div className="grid grid-cols-2 gap-6">
+              {/* Row 1 */}
               <div className="bg-white rounded-lg p-6 relative hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
-                <h2 className="font-semibold text-lg text-black">Schedule a Review Meeting</h2>
+                <h2 className="font-semibold text-lg text-black">Enter talent data</h2>
+                <ul className="text-sm my-2 text-black list-disc pl-5">
+                  <li>
+                    Update the talent data in SuccessFactors to represent a holistic view of
+                    colleagues.​
+                  </li>
+                  <li>
+                    Enter comments related to development needs, key person dependency, talent pool
+                    nomination, and flight risk (where high)
+                  </li>
+                </ul>
+                <Link
+                  href="https://lorprod.workzonehr.cfapps.eu10.hana.ondemand.com/site#workzone-admin?sap-app-origin-hint=&/groups/fPQkxGea8XlNv7aSFinMfZ/documents/IcwQOtzUWX4sGreao5PNPI/slide_viewer"
+                  target="_blank"
+                  className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm mt-2"
+                >
+                  How to Access Sessions
+                </Link>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 relative hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
+                <h2 className="font-semibold text-lg text-black">
+                  Support data entry (where needed)
+                </h2>
                 <p className="text-sm my-2 text-black">
-                  Schedule a 1-hour review meeting with your manager.
+                  Support participants to use holistic data, reduce bias, share briefing materials,
+                  and navigate the system as needed
                 </p>
               </div>
 
-              {/* Card 2 */}
+              {/* Row 2 */}
               <div className="bg-white rounded-lg p-6 hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
-                <h2 className="font-semibold text-lg text-black">
-                  Prepare for your Review Meeting
-                </h2>
+                <h2 className="font-semibold text-lg text-black">Prep for meeting</h2>
                 <p className="text-sm my-2 text-black">
-                  Prepare using LOR Learn resources including colleague and manager guides.
-                  It&apos;s important for everyone to prepare for their conversation and to
-                  understand the process.
+                  <ul className="text-sm my-2 text-black list-disc pl-5">
+                    <li>Participants prep for meetings based on the agenda.</li>
+                    <li>Share with People Ops an overview before the meeting</li>
+                  </ul>
                 </p>
                 <div className="mt-4 flex gap-4">
                   <Link
-                    href="https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2flor%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dONLINE%5fCONTENT%5fSTRUCTURE%26componentID%3dITEM16267%26componentTypeID%3dONLINE%26revisionDate%3d1744193040000%26fromSF%3dY&company=LORProd"
+                    href="https://lorprod.workzonehr.cfapps.eu10.hana.ondemand.com/site#workzone-home&/groups/fPQkxGea8XlNv7aSFinMfZ/documents/RyHr2U3bG201OQnqhpOz0x/slide_viewer"
                     target="_blank"
                     className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm"
                   >
-                    Colleague Guide
-                  </Link>
-                  <Link
-                    href="https://performancemanager5.successfactors.eu/sf/learning?destUrl=https%3a%2f%2flor%2eplateau%2ecom%2flearning%2fuser%2fdeeplink%5fredirect%2ejsp%3flinkId%3dONLINE%5fCONTENT%5fSTRUCTURE%26componentID%3dITEM16269%26componentTypeID%3dONLINE%26revisionDate%3d1744193340000%26fromSF%3dY&company=LORProd"
-                    target="_blank"
-                    className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm"
-                  >
-                    Manager Guide
-                  </Link>
-                  <Link
-                    href="https://performancemanager5.successfactors.eu/sf/home?company=LORProd&_s.crb=tx0mWvi2iDhIOvv8tl7a%252fPTKPa1PqzpPYKHMbFvnFFM%253d"
-                    target="_blank"
-                    className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm"
-                  >
-                    Access Your Form
+                    Manage Agenda Template
                   </Link>
                 </div>
               </div>
 
-              {/* Card 3 */}
               <div className="bg-white rounded-lg p-6 hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
-                <h2 className="font-semibold text-lg text-black">
-                  Register for a Manager LIVE Webinar
-                </h2>
+                <h2 className="font-semibold text-lg text-black">Schedule meeting</h2>
                 <p className="text-sm my-2 text-black">
-                  Register for a LIVE manager webinar on performance reviews and goal setting.
+                  <ul className="text-sm my-2 text-black list-disc pl-5">
+                    <li>People Ops organise meeting for all participants using agenda template.</li>
+                    <li>
+                      People Ops to help participants prepare insights for the meeting based on what
+                      they saw, and what they&apos;d like support with
+                    </li>
+                  </ul>
                 </p>
                 <div className="mt-4">
                   <Link
-                    href="https://forms.office.com/r/fKjDHRgtXJ"
+                    href="https://lorprod.workzonehr.cfapps.eu10.hana.ondemand.com/site#workzone-home&/groups/fPQkxGea8XlNv7aSFinMfZ/documents/RyHr2U3bG201OQnqhpOz0x/slide_viewer"
                     target="_blank"
                     className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm"
                   >
-                    Register Now
+                    Manage Agenda Template
                   </Link>
                 </div>
               </div>
 
-              {/* Card 4 */}
+              {/* Row 3 */}
+              <div className="bg-white rounded-lg p-6 hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
+                <h2 className="font-semibold text-lg text-black">
+                  Share during meeting and agree actions
+                </h2>
+                <ul className="text-sm my-2 text-black list-disc pl-5">
+                  <li>
+                    Work through the agenda bringing a view of your team, and what you'd like the
+                    group to know, provide input, or help shape.
+                  </li>
+                  <li>Discuss collective items if you notice any</li>
+                  <li>Agree on actions and deadline</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
+                <h2 className="font-semibold text-lg text-black">Host meeting</h2>
+                <p className="text-sm my-2 text-black">
+                  <ul className="text-sm my-2 text-black list-disc pl-5">
+                    <li>Open the session with a recap of the purpose of KOP</li>
+                    <li>
+                      Work through the agenda allowing all participants to contribute as needed
+                    </li>
+                    <li>Agree on actions and responsible persons.</li>
+                  </ul>
+                </p>
+              </div>
+
+              {/* Row 4 */}
               <div className="bg-white rounded-lg p-6 relative hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
                 <h2 className="font-semibold text-lg text-black">
-                  Update Your SuccessFactors Profile
+                  Ideate and update on progress through ongoing leadership discussions
                 </h2>
                 <p className="text-sm my-2 text-black">
-                  Update your SuccessFactors profile for career possibilities. We want
-                  everyone&apos;s career to benefit from the pipeline of exciting projects secured.
-                  By updating your profile on SuccessFactors, our People team will have the most up
-                  to date picture of your experience and skills to inform the business to plan
-                  resource on future projects. Click here to complete your sector experience,
-                  location preferences and to add your most recent CV.
+                  <ul className="text-sm my-2 text-black list-disc pl-5">
+                    <li>
+                      Consider ongoing talent actions in leadership discussions to help shape talent
+                      agenda: future skills development, diversity & inclusion, succession planning,
+                      resourcing, and talent development
+                    </li>
+                    <li>Prompt your team to complete their Talent Profile</li>
+                  </ul>
+                </p>
+                <div className="mt-4">
+                  <Link
+                    href="https://performancemanager5.successfactors.eu/sf/liveprofile"
+                    target="_blank"
+                    className="inline-block bg-yellow-400 hover:bg-yellow-500 text-black font-medium px-6 py-2 rounded-md text-sm"
+                  >
+                    Update Profile
+                  </Link>
+                </div>
+              </div>
+
+              <div className="bg-white rounded-lg p-6 relative hover:shadow-[0_0_20px_rgba(250,204,21,0.8)] transition-shadow duration-300">
+                <h2 className="font-semibold text-lg text-black">
+                  Support ongoing talent discussions and operationalising data
+                </h2>
+                <p className="text-sm my-2 text-black">
+                  <ul className="text-sm my-2 text-black list-disc pl-5">
+                    <li>
+                      Bring actions and data to leadership discussions to help shape ongoing talent
+                      agenda: future skills development, diversity & inclusion, succession planning,
+                      resourcing, and talent development
+                    </li>
+                    <li>Continue to promote completion of Talent Profiles for colleagues</li>
+                  </ul>
                 </p>
                 <div className="mt-4">
                   <Link
